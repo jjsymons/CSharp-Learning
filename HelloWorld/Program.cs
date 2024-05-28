@@ -6,7 +6,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            StringDataTypes();
+            Operators();
         }
         static void HelloWorld()
         {
@@ -89,9 +89,77 @@ namespace HelloWorld
 
         static void BooleanType()
         {
+            bool male = true;
+            bool female = false;
 
+            Console.WriteLine(male);
+            Console.WriteLine(female);
         }
 
+        static void Operators()
+        {
+            int age = 21;
 
+            // Add
+            age++;
+            Console.WriteLine(age);
+
+            age = age + 1;
+            Console.WriteLine(age);
+
+            age += 1;
+            Console.WriteLine(age);
+
+            // Minus
+            age--;
+            Console.WriteLine(age);
+
+            age = age - 1;
+            Console.WriteLine(age);
+
+            age -= 1;
+            Console.WriteLine(age);
+
+            age = 20;
+            age *= 10;
+            Console.WriteLine(age);
+
+            age = 20;
+            age /= 3;
+            Console.WriteLine(age);
+            // Gives 6 as can't give decimal of 6.666..7
+
+            double solution = 20;
+            solution /= 3;
+            Console.WriteLine(solution);
+
+            // String operations
+
+            string name = "Joe";
+            name += " is here";
+
+            Console.WriteLine(name);
+
+            // name -= " is here". will not work
+
+            char l = 'J';
+            l += 'o';
+
+            Console.WriteLine(l);
+            // Cannot add letters to char, will add values to work out the number represented by their ascii
+            // Therefore this output is 1
+
+            int i = 0;
+
+            Console.WriteLine(i++);
+            // Output = 0, compiler is being told to add 1 after. 
+
+            Console.WriteLine(i);
+            // output = 1
+
+            Console.WriteLine(++i);
+            // output 2, as ++ occurs before
+
+        }
     }
 }
