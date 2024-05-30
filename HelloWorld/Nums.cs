@@ -137,6 +137,8 @@ namespace Nums
 
             int div = numOne % numTwo;
             Console.WriteLine(div);
+
+
         }
     }
 }
