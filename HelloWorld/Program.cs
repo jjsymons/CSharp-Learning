@@ -5,6 +5,7 @@ using Variables;
 using ConsoleIO;
 using IfElseStatementsAndSwitches;
 using Loops;
+using Format;
 
 
 namespace HelloWorld
@@ -13,7 +14,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Loop.DoWhileLoops();
+            Formatting.NumberFormatting();
         }
     }
 }
