@@ -4,6 +4,7 @@ using Nums;
 using Variables;
 using ConsoleIO;
 using IfElseStatementsAndSwitches;
+using Loops;
 
 
 namespace HelloWorld
@@ -12,7 +13,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            IfElse.LessonSwitch();
+            Loop.DoWhileLoops();
         }
     }
 }
