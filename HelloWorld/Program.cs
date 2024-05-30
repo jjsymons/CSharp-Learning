@@ -9,9 +9,5 @@ namespace HelloWorld
         {
             Numerical.Modulas();
         }
-        static void HelloWorld()
-        {
-            Console.WriteLine("Hello World");
-        }
     }
 }
