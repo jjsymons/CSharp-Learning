@@ -3,7 +3,7 @@ using Strings;
 using Nums;
 using Variables;
 using ConsoleIO;
-using IfElseStatements;
+using IfElseStatementsAndSwitches;
 
 
 namespace HelloWorld
@@ -12,7 +12,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            IfElse.Lesson();
+            IfElse.LessonSwitch();
         }
     }
 }
