@@ -14,7 +14,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            CIO.IOTryParse();
+            StringsLessons.StringLitterals();
         }
     }
 }
