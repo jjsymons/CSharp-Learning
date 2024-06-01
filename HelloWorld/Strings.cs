@@ -70,6 +70,53 @@ namespace Strings
 
             string finalSentence = @"I was like ""OMG""" + "\n\t" + @"Lucy asked ""What did he say?!""" + "\n" + @"""I really shouldn't say""";
             Console.WriteLine(finalSentence);
+
+            // String concat
+
+            string concat = string.Concat(newSentence, " Says who? Says ", fname, " ",lName);
+            Console.WriteLine(concat);
+        }
+        public static void StringIterationLoop()
+        {
+            string message = "Hi";
+            // message = char[] = ['H', 'i'] this is an array
+
+            // to write out part of the sentence you can use []
+
+            Console.WriteLine(message[0]); // H
+            Console.WriteLine(message[1]); // i
+            //Console.WriteLine(message[2]); // ERROR out of length, how can this be avoided?
+
+            // Solution
+
+            for (int i = 0; i < message.Length; i++) 
+            {
+                Console.WriteLine(message[i]);
+            }
+        }
+        public static void StringIfNotNull()
+        {
+            Console.WriteLine("Enter your name");
+            //string name = Console.ReadLine();
+            string name = null; // Example shows that Equals fails here, because you are calling a method on a null object. Crashes program.
+
+            // Methods to check if anything was entered
+            if (name != "")
+            {
+                Console.WriteLine("1");
+            }
+            //if (!name.Equals(""))
+            //{
+                //Console.WriteLine("2");
+            //}
+            // Issue with the above methods is that if the answer is null, program still executes.
+
+            // Solution
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                Console.WriteLine("3");
+            }
         }
     }
 }

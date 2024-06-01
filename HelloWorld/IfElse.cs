@@ -37,6 +37,20 @@ namespace IfElseStatementsAndSwitches
             }
 
 
+            // You can also use functions in if blocks:
+
+            string password = "1234567";
+
+            if (!password.Equals("1234567"))
+                {
+                    Console.WriteLine("Incorrect");
+                }
+            else
+                {
+                    Console.WriteLine("Sucessful Login");
+                }
+
+
         }
         public static void LessonSwitch()
         {
