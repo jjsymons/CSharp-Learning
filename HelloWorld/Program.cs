@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Strings;
 using Nums;
 using Variables;
@@ -15,7 +16,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            ArrayLessons.ListsLesson();
+            ArrayLessons.DictionaryLesson();
         }
     }
 }

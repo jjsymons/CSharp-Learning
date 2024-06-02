@@ -83,9 +83,6 @@ namespace Arrays
 			{
                 Console.WriteLine($"Sorry, you input '{number}', which is not an integer");
             }
-
-
-			
 		}
         public static void ListsLesson()
         {
@@ -98,9 +95,6 @@ namespace Arrays
 			// if an array needs to get larger, like for a phonebook, how can we increase the size?
 			// Lists
 
-
-
-
 			int[] lasrArray = new int[]
 			{
 				1,2,3,4,5,6
@@ -112,6 +106,60 @@ namespace Arrays
 			{
 				newList.Add(i + 1);
 			}
+        }
+		public static void DictionaryLesson()
+		{
+			Dictionary<int, string> names = new Dictionary<int, string>
+			{
+				// Key Value pair, Key must be unique, values, don't have to be
+				{1, "Joe"},
+				{2, "Pete"},
+				{3, "Pete"}
+			};
+
+			names.Add(4, "Meg");
+			names.Add(5, "Esme");
+			names.Add(6, "Anna");
+
+			for (int i = 0;i < names.Count; i++)
+			{
+				KeyValuePair<int, string> pair = names.ElementAt(i);
+                Console.WriteLine($"ID: {pair.Key} - Name: {pair.Value}");
+            }
+
+			foreach (KeyValuePair<int, string> item in names)
+			{
+				Console.WriteLine($"ID: {item.Key} - Name: {item.Value}"); 
+			}
+
+			Dictionary<string, string> teachers = new Dictionary<string, string>()
+			{
+				{"Science", "Mr Smith"},
+				{"Maths", "Miss Jones"},
+				{"English","Dr. Bodkin" }
+			};
+
+			// Console.WriteLine(teachers["maths"]); // Fails, as it looks for "maths" and not "Maths" which is not a key value
+			// Very similar to TryParse issue
+
+			if (teachers.TryGetValue("Maths", out string teach))
+			{
+				Console.WriteLine(teach);
+			}
+			else
+			{
+				Console.WriteLine("Teacher not found");
+			}
+			teachers["Maths"] = "Mr Symons";
+
+            if (teachers.TryGetValue("Maths", out teach))
+            {
+                Console.WriteLine(teach);
+            }
+            else
+            {
+                Console.WriteLine("Teacher not found");
+            }
         }
     }
 }
