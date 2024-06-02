@@ -38,17 +38,17 @@ namespace Arrays
 				11,12,13,14,15,16,17,18,19,1,2,3,4,5,6,7,8,9,10
 			};
 
-            // in order to sort an array we can use the following
+			// in order to sort an array we can use the following
 
-            string test = " ";
+			string test = " ";
 			test = test.Replace(" ", ""); // Returns the string replacing " " with ""
 
-            Array.Sort(newArray); // Void return so you do not need newArray 
+			//Array.Sort(newArray); // Void return so you do not need newArray 
 
-            /*foreach (int num in newArray)
+			/*foreach (int num in newArray)
 			{
                 Console.Write($"{num} ");
-            }*/
+            }
 
 			Array.Reverse(newArray);
 
@@ -58,9 +58,34 @@ namespace Arrays
             {
                 Console.Write($"{num} ");
             }
-            Console.WriteLine("");
-            
+            Console.WriteLine(""); */
 
-        }
+			Console.WriteLine("Write a number to search for between 1 and 20");
+
+			string number = Console.ReadLine();
+
+			bool success = int.TryParse(number, out int intNumber);
+
+			if (success)
+			{
+                int position = -1;
+                position = Array.IndexOf(newArray, intNumber);
+                if (position == -1)
+                {
+                    Console.WriteLine("Not found");
+                }
+                else
+                {
+                    Console.WriteLine($"Found {number} at {position}");
+                }
+            }
+			else
+			{
+                Console.WriteLine($"Sorry, you input '{number}', which is not an integer");
+            }
+
+
+			
+		}
 	}
 }
