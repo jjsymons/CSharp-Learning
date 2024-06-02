@@ -2,7 +2,7 @@
 
 namespace Strings
 {
-    public class StringsLessons()
+    public class StringsLessons
     {
         public static void HelloWorld()
         {

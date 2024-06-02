@@ -2,7 +2,7 @@
 
 namespace Variables
 {
-    public class Vars()
+    public class Vars
     {
         public static void Variables()
         {

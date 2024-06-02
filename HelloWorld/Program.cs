@@ -6,6 +6,7 @@ using ConsoleIO;
 using IfElseStatementsAndSwitches;
 using Loops;
 using Format;
+using Arrays;
 
 
 namespace HelloWorld
@@ -14,7 +15,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            StringsLessons.StringIfNotNull();
+            ArrayLessons.Arrays();
         }
     }
 }
