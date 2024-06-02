@@ -15,7 +15,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            ArrayLessons.Arrays();
+            ArrayLessons.ListsLesson();
         }
     }
 }

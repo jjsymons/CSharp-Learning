@@ -87,5 +87,31 @@ namespace Arrays
 
 			
 		}
-	}
+        public static void ListsLesson()
+        {
+			// For Arrays, the size must be predetermined, you cannot alter the size of the original array
+			// Example
+
+			int[] ogArray = new int[5];
+			int[] newArray = new int[6];
+
+			// if an array needs to get larger, like for a phonebook, how can we increase the size?
+			// Lists
+
+
+
+
+			int[] lasrArray = new int[]
+			{
+				1,2,3,4,5,6
+			};
+
+			List<int> newList = new List<int>();
+
+			for (int i = 0; i <= 5; i++)
+			{
+				newList.Add(i + 1);
+			}
+        }
+    }
 }
