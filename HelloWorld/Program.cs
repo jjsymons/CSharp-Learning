@@ -8,6 +8,7 @@ using IfElseStatementsAndSwitches;
 using Loops;
 using Format;
 using Arrays;
+using Functions;
 
 
 namespace HelloWorld
@@ -16,7 +17,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            ArrayLessons.DictionaryLesson();
+            Function.FunctionsLessons();
         }
     }
 }
