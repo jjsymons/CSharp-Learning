@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace Functions
 {
@@ -6,6 +7,7 @@ namespace Functions
 	{
 		public static void FunctionsLessons()
 		{
+			/*
 			// Welcome Message is available as it's within the class and static
 			WelcomeMessage();
 			// GoodByeMessage(); Needs to be static to be called without instantiation
@@ -24,7 +26,17 @@ namespace Functions
 
 			int total = addNumbers();
             Console.WriteLine($"The numbers given added up to: {total}");
+			*/
+			int number = 0;
+			Console.WriteLine("Please give your name");
+			string name = Console.ReadLine();
+			name = GetAge(name, out number);
+
+			Console.WriteLine($"The name is {name} and they are {number}");
+
+			refAssign(ref name);
         }
+		/*
 		static int addNumbers()
 		{
 			bool success = false;
@@ -54,12 +66,36 @@ namespace Functions
 		{
 			Console.WriteLine("Goodbye!");
 		}
-	}
-	public class Messages
+		*/
+
+        // More serious functions
+		// Allows a return, in this instance a string, and an out which is an int, previously declared in the main part of the code
+		static string GetAge(string name, out int number)
+		{
+			if (name.ToLower().Equals("joe"))
+			{
+				number = 28;
+			} else
+			{
+				number = 32;
+			}
+			return name;
+			
+		}
+		// Ref and Out are similar, but out means the variable must be used, otherwise an Exception is raised
+		// While ref doesn't, Out also means that the variable in the function is held in another part of the memory, ie, within a
+		// Main function int num is at memory position 1, while in a called function, num is now at memory position 2.
+		// Out does not have to be instantiated before calling, unlike ref
+		static void refAssign(ref string name)
+		{
+			name = "Mike";
+		}
+    }/*
+    public class Messages
 	{
 		public void Greeting()
 		{
             Console.WriteLine("Hello");
         }
-	}
+	}*/
 }
