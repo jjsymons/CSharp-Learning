@@ -10,6 +10,7 @@ using Format;
 using Arrays;
 using Functions;
 using ExceptionsLesson;
+using Structures;
 
 
 namespace HelloWorld
@@ -18,7 +19,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Exc.ExcLessons();
+            StructuresLesson.StructLesson();
         }
     }
 }
