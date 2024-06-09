@@ -9,6 +9,7 @@ using Loops;
 using Format;
 using Arrays;
 using Functions;
+using ExceptionsLesson;
 
 
 namespace HelloWorld
@@ -17,7 +18,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Function.FunctionsLessons();
+            Exc.ExcLessons();
         }
     }
 }
