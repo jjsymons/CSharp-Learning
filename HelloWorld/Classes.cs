@@ -9,8 +9,7 @@ namespace Classes
             Person person1 = new Person(); // Blank for empty constructor
             Person person2 = new Person("Joe"); // Blank
             Person person3 = new Person(21); // Age 
-            Person person4 = new Person("Joe", 23); // Name, age
-
+            Person person4 = new Person(name:"Joe", age:23); // Name, age
         }
         static Person ReturnPerson()
         {
@@ -24,7 +23,6 @@ namespace Classes
                 Console.WriteLine("Enter an age: ");
                 success = int.TryParse(Console.ReadLine(), out ageGiven);
             }
-
             return new Person(name, ageGiven);
         }
     }
@@ -34,7 +32,8 @@ namespace Classes
         public int age;
 
 
-        // Overloads for taking multiple inc
+        // Overloads for taking multiple class constructors, so that if there is issues with the args given,
+        // then the program won't error as default values will be used 
         public Person()// Blank
         {
             this.name = "";
