@@ -10,6 +10,11 @@ namespace Classes
             Person person2 = new Person("Joe"); // Blank
             Person person3 = new Person(21); // Age 
             Person person4 = new Person(name:"Joe", age:23); // Name, age
+
+            Console.WriteLine($"Person1 {person1.name} - {person1.age}");
+            Console.WriteLine($"Person2 {person2.name} - {person2.age}");
+            Console.WriteLine($"Person3 {person3.name} - {person3.age}");
+            Console.WriteLine($"Person4 {person4.name} - {person4.age}");
         }
         static Person ReturnPerson()
         {

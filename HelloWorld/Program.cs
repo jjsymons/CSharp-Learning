@@ -11,6 +11,7 @@ using Arrays;
 using Functions;
 using ExceptionsLesson;
 using Structures;
+using Classes;
 
 
 namespace HelloWorld
@@ -19,7 +20,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            StructuresLesson.StructLesson();
+            ClassLessons.Cls();
         }
     }
 }
