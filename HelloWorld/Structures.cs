@@ -5,7 +5,7 @@ namespace Structures
 {
 	public class StructuresLesson 
 	{
-		struct Person
+		struct Person // Structs are used when we want simple data structures for example, defining a shape and giving it a width and height
 		{
 			public string fName;
 			//string lName;
