@@ -12,6 +12,7 @@ using Functions;
 using ExceptionsLesson;
 using Structures;
 using Classes;
+using ClassMethods;
 
 
 namespace HelloWorld
@@ -20,7 +21,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            ClassLessons.Cls();
+            ClassMethodClass.programFunction();   
         }
     }
 }
